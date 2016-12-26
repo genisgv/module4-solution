@@ -1,6 +1,7 @@
 (function () {
 'use strict';
 
+
 angular.module('data')
 .service('MenuDataService', MenuDataService);
 
@@ -20,11 +21,11 @@ function MenuDataService($http) {
     })
 
   };
+
   service.getItemsForCategory = function (categoryShortName) {
     return $http({
       method: "GET",
       url: ("https://davids-restaurant.herokuapp.com/menu_items.json"),
-      // url: (ApiBasePath + "/menu_items.json"),
       params: {
         category: categoryShortName
       }

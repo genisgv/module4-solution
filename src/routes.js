@@ -42,10 +42,6 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 
             }]
     }
-    // params: {
-    //   param1: "defaultValue",
-    //   param2: "param2Default"
-    // }
   });
 }
 
